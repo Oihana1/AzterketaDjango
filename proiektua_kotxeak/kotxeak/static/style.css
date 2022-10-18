@@ -1,0 +1,21 @@
+h1{
+    color:yellow;
+    }
+    h2{
+    color:green;
+    }
+    .bezeroa{
+        text-align:center;
+        margin: auto;
+        margin-top:10px;
+        border: 2px solid green;
+        background-color:#fefbd8;
+        width:300px;
+    }
+    body{
+    background-color:#f8f398;
+    }
+    span{
+     color:green;
+     margin-left:10px;
+    }

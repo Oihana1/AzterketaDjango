@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}"/>
+
+<body>
+    <div class="platerak">
+      <nav class="navbar navbar-expand-lg bg-success">
+        <h1>APE TAILERRA</h1>
+        <span><a href="/gehituBezeroa">Gehitu Bezeroa</a></span>
+        <span><a href="/gehituKotxea">Gehitu Kotxea</a></span>
+      </nav>
+      <div>
+        {%for bezero in bezeroa %}
+            <div class="bezeroa" >
+                <h2>{{bezero.izena}}</h2>
+                <p>{{bezero.abizena}}</p>
+                <p>{{bezero.zb}}</p>
+                <span><a href="ezabatuBezeroa/{{ bezero.id }}">ezabatu</a></span>
+            </div>
+        {%endfor%}
+        </div>
+        <div>
+        {%for kotxe in kotxea %}
+            <div class="bezeroa" >
+                <h2>{{kotxe.matrikula}}</h2>
+                <p>{{kotxe.marka}}</p>
+                <span><a href="alokatu/{{kotxe.id}}">Alokatu</a></span>
+            </div>
+        {%endfor%}
+        </div>
+        
+    </div>
+    <footer>
+
+    </footer>
+</body>
+</html>

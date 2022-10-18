@@ -1,0 +1,15 @@
+2.
+Manage.py : zerbitzaria martxan jartzeko 
+setting.py: proiektuaren konfigurazioa eta bertan sortutako aplikazioak gehitzen ditugu
+models.py:Datu basean sortzeko eremuak, models.py definitzen ditugu.
+views.py: Web gunean agertuko diren bistak eta bertan funtzioak definitu
+urls.py: web helbideak  url-ak web orri batetik bestera pasatzeko
+
+3.
+Proiektua: Proiektua sortzen dugunean bertan konfigurazio guztia joango da
+Aplikazioa: webgunea garatzeko mvc
+Modeloa: datu basean kofiguratzeko eremuak
+4.SQlite db egokia delako
+5.Model: Modeloa Datu baseko eremuak sortzea models.py
+Controller: Mapeoak egitea urls.py
+View:Bista bistaratzea views.py
